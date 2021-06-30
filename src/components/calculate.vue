@@ -64,7 +64,7 @@ export default {
   data: function(){
     return {
       total_enrolled: "0",
-      average_cost: "0",
+      average_cost: "4000",
       removed1: 0,
       removed2: 0,
       savings1: 0,
@@ -107,13 +107,13 @@ export default {
     buttonColor: function(num){
       switch(num){
         case 1:
-          this.buttons.below = true;
-          this.buttons.average = false;
+          this.buttons.below = false;
+          this.buttons.average = true;
           this.buttons.above = false;
           break;
         case 2:
-          this.buttons.below = false;
-          this.buttons.average = true;
+          this.buttons.below = true;
+          this.buttons.average = false;
           this.buttons.above = false;
           break;
         case 3:
